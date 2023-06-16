@@ -24,6 +24,10 @@ O projeto está organizado da seguinte forma:
 - `pages/`: Pasta com as páginas adicionais do site, além do `index.php`.
   - `eletricista.html`: Página relacionada ao eletricista.
 
+## Site 👽
+
+**Acesse o link para ver o site:** https://maxsuel-santos.github.io/Dservicos
+
 ## Licença 🔐
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais informações.
