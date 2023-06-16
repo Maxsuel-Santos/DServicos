@@ -26,7 +26,7 @@ O projeto está organizado da seguinte forma:
 
 ## Site 👽
 
-**Acesse o link para ver o site:** https://maxsuel-santos.github.io/Dservicos
+**Acesse o link para ver o site:** https://maxsuel-santos.github.io/DServicos
 
 ## Licença 🔐
 
