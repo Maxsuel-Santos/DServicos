@@ -21,7 +21,7 @@ O projeto está organizado da seguinte forma:
   - `css/`: Pasta com o arquivo `style.css`.
   - `img/`: Pasta com todas as imagens usadas (png e svg apeas como imagens).
   - `js/`: Pasta com os arquivos JavaScript.
-- `pages/`: Pasta com as páginas adicionais do site, além do `index.php`.
+- `pages/`: Pasta com as páginas adicionais do site, além do `index.html`.
   - `eletricista.html`: Página relacionada ao eletricista.
 
 ## Site 👽
