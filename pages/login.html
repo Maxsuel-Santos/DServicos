@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">    
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -36,7 +37,7 @@
             <h2>Seja Bem-Vindo(a)</h2>
             <p>Somos mais de <strong>1 milhão</strong> de profissionais cadastrados e mais de <strong>500 mil</strong> pedidos mensalmente.</p>
 
-            <form>
+            <form onsubmit="return validateForm()">
                 <label for="email">E-mail:</label> <br>
                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required> <br>
                 <i class="bi bi-envelope" id="EmailIcon"></i>
@@ -47,8 +48,8 @@
                             
                 <div class="showForgot-password">
                     <div>
-                        <input type="checkbox" name="showPass" id="showPass">
-                        <label for="showPass">Mostra senha</label>
+                        <input type="checkbox" name="showPass" id="showPass" onchange="togglePassword()">
+                        <label for="showPass">Mostrar senha</label>
                     </div>
                     <a href="#" class="forgotPasswordLink">Esqueci minha senha</a>
                 </div>
@@ -57,7 +58,6 @@
                     <a href="#" class="createAccount">Criar conta</a>
                     <button type="submit" class="login">Entrar</button>
                 </div>
-
             </form>
         </section>
        
@@ -127,6 +127,47 @@
     <!--=============== MAIN JS ===============-->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/scrollReveal.js"></script>
+    <script src="../assets/js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- MODAL EMAIL -->
+  <div class="modal fade" id="emailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Erro de Validação</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Por favor, insira um e-mail válido.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PASSWORD-->
+  <div class="modal fade" id="passModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Erro de Validação</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Por favor, insira uma senha válida.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Entendi</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
