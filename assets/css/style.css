@@ -757,3 +757,64 @@ footer {
     font-size: 2.2rem;
     margin-bottom: .5rem;
 }
+
+/* ===================== LOGIN ===================== */
+
+#mainLogin {
+    background-image: url("../img/background-login.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.loginForm {
+    width: 40vw;
+    height: 70vh;
+    background-color: var(--cor_branco);
+    margin: 2rem auto;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: .3rem .3rem .8rem #00000051,
+                inset .1rem .1rem .2rem #00000051,
+                inset -.1rem -.1rem .2rem #00000051;
+}
+
+.loginForm > h2, p {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.loginForm form label {
+    color: #505050;
+    font-weight: 500;
+}
+
+.loginForm input#email, input#password {
+    padding: 1.5rem;
+    margin: .5rem 0 .5rem 0;
+    border-radius: .75rem;
+    outline: none;
+    border: .29rem solid #D1D0D0;
+    width: 100%;
+    text-indent: 1.7rem;
+}
+
+.loginForm input#email {
+    margin-bottom: 2rem;
+}
+
+#EmailIcon, #passIcon {
+    position: absolute;
+}
+
+#EmailIcon {
+    top: 52%;
+    left: 32%;
+}
+
+#passIcon {
+    top: 69%;
+    left: 32%;
+}
