@@ -766,12 +766,15 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 80vh;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loginForm {
     width: 40vw;
-    height: 70vh;
+    height: 73vh;
     background-color: var(--cor_branco);
     margin: 2rem auto;
     border-radius: 1.5rem;
@@ -786,7 +789,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-.loginForm form label {
+.loginForm form label, .forgotPasswordLink {
     color: #505050;
     font-weight: 500;
 }
@@ -810,11 +813,56 @@ footer {
 }
 
 #EmailIcon {
-    top: 52%;
+    top: 54.6%;
     left: 32%;
 }
 
 #passIcon {
-    top: 69%;
+    top: 71.8%;
     left: 32%;
+}
+
+.showForgot-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: .3rem;
+}
+
+.forgotPasswordLink {
+    font-size: 1.6rem;
+}
+
+#showPass {
+    margin-right: .6rem;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.createAccount {
+    color: #505050;
+    font-size: 1.6rem;
+}
+
+.loginCreate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+button.login {
+    padding: .7rem;
+    width: 25%;
+    outline: none;
+    border: none;
+    background-color: var(--cor_azul_claro);
+    color: var(--cor_branco);
+    font-weight: bold;
+    border-radius: .8rem;
+    box-shadow: .2rem .2rem .2rem #00000022,
+                inset .2rem .2rem .2rem #00000022;
 }
