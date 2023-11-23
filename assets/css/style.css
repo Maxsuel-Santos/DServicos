@@ -813,12 +813,12 @@ footer {
 }
 
 #EmailIcon {
-    top: 55.6%;
+    top: 54.8%;
     left: 32%;
 }
 
 #passIcon {
-    top: 73.4%;
+    top: 72.4%;
     left: 32%;
 }
 
@@ -835,12 +835,11 @@ footer {
     font-size: 1.6rem;
 }
 
-#showPass {
-    margin-right: .6rem;
+div.form-check {
+    margin-left: .8rem;
 }
 
 input[type="checkbox"] {
-    transform: scale(1.5);
     cursor: pointer;
 }
 
@@ -871,3 +870,6 @@ button.login {
     box-shadow: .2rem .2rem .2rem #00000022,
                 inset .2rem .2rem .2rem #00000022;
 }
+
+/* ===================== PEDIDO FEITO ===================== */
+
