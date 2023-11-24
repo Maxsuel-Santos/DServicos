@@ -873,3 +873,53 @@ button.login {
 
 /* ===================== PEDIDO FEITO ===================== */
 
+#mainOrder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.textMessageSuccess {
+    min-height: 60vh;
+    text-align: center;
+}
+
+.imgArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgArrow img {
+    height: 30%;
+    width: 30%;
+}
+
+.textMessageSuccess  p{
+    text-align: center;
+}
+
+.textMessageSuccess h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.textMessageSuccess p{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2.7rem;
+}
+
+.textMessageSuccess > a.btnSuccess {
+    padding: 1rem 3.4rem;
+    background-color: #21E900;
+    color: #fff;
+    width: 50px;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: .7rem;
+    box-shadow: inset -1px -1px 3px #00000041, inset 1px 1px 3px #00000041;
+}
+
